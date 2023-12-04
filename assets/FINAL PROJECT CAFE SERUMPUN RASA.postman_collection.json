@@ -10,6 +10,34 @@
 			"name": "User",
 			"item": [
 				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Fahri Wijaya\",\r\n  \"role\": \"Kasir\",\r\n  \"email\": \"fahriwijaya@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Login",
 					"request": {
 						"method": "POST",
@@ -38,30 +66,10 @@
 					"response": []
 				},
 				{
-					"name": "Register",
+					"name": "Test Server",
 					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Fahri Wijaya\",\r\n  \"role\": \"Kasir\",\r\n  \"email\": \"fahriwijaya@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/register",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"register"
-							]
-						}
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
@@ -87,7 +95,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"nameMenu\": \"Nasi Goreng\",\r\n  \"description\": \"Nasi Goreng Gila\",\r\n  \"kategori\": \"makanan\",\r\n  \"harga\": 13000\r\n}",
+							"raw": "{\r\n  \"name\": \"Nasi Goreng\",\r\n  \"description\": \"Nasi Goreng Gila\",\r\n  \"gambar\": \"link\",\r\n  \"harga\": 13000,\r\n  \"kategori\": \"makanan\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -170,7 +178,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Nasi Goreng Gila\",\r\n  \"description\": \"Nasi Goreng Sosis\"\r\n  \"harga\": 15000\r\n}",
+							"raw": "{\r\n  \"name\": \"Nasi Goreng Gila\",\r\n  \"description\": \"Nasi Goreng Sosis\",\r\n  \"harga\": 15000\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -192,6 +200,41 @@
 								{
 									"key": "id",
 									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menu Update Status",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"private\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/menu/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"menu",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
 								}
 							]
 						}
