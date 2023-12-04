@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
+    "username": "vocasia",
+    "password": "vocasia",
     "database": "serumpun-rasa",
-    "host": "127.0.0.1",
+    "host": "103.127.97.117",
     "dialect": "mysql"
   },
   "test": {

@@ -24,12 +24,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/register",
+							"raw": "http://103.127.97.117:4001/register",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"register"
 							]
@@ -52,12 +55,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/login",
+							"raw": "http://103.127.97.117:4001/login",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"login"
 							]
@@ -69,7 +75,18 @@
 					"name": "Test Server",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://103.127.97.117:4001",
+							"protocol": "http",
+							"host": [
+								"103",
+								"127",
+								"97",
+								"117"
+							],
+							"port": "4001"
+						}
 					},
 					"response": []
 				}
@@ -103,12 +120,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/menu",
+							"raw": "http://103.127.97.117:4001/menu",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"menu"
 							]
@@ -122,12 +142,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/menu",
+							"raw": "http://103.127.97.117:4001/menu",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"menu"
 							]
@@ -141,12 +164,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/menu/:kategori",
+							"raw": "http://103.127.97.117:4001/menu/:kategori",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"menu",
 								":kategori"
@@ -186,12 +212,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/menu/:id",
+							"raw": "http://103.127.97.117:4001/menu/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"menu",
 								":id"
@@ -221,12 +250,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/menu/:id",
+							"raw": "http://103.127.97.117:4001/menu/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"menu",
 								":id"
@@ -257,12 +289,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/menu/:id",
+							"raw": "http://103.127.97.117:4001/menu/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"menu",
 								":id"
@@ -297,12 +332,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/customer",
+							"raw": "http://103.127.97.117:4001/customer",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"customer"
 							]
@@ -326,12 +364,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/customer",
+							"raw": "http://103.127.97.117:4001/customer",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"customer"
 							]
@@ -355,12 +396,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/customer/:id",
+							"raw": "http://103.127.97.117:4001/customer/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"customer",
 								":id"
@@ -400,12 +444,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/customer/:id",
+							"raw": "http://103.127.97.117:4001/customer/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"customer",
 								":id"
@@ -445,12 +492,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/customer/:id",
+							"raw": "http://103.127.97.117:4001/customer/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"customer",
 								":id"
@@ -495,12 +545,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/transaction/:id",
+							"raw": "http://103.127.97.117:4001/transaction/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"transaction",
 								":id"
@@ -531,12 +584,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/transaction/:id",
+							"raw": "http://103.127.97.117:4001/transaction/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"transaction",
 								":id"
@@ -576,12 +632,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/transaction/:id",
+							"raw": "http://103.127.97.117:4001/transaction/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"transaction",
 								":id"
@@ -612,12 +671,15 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/transaction/:id",
+							"raw": "http://103.127.97.117:4001/transaction/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"transaction",
 								":id"
@@ -653,12 +715,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/laporan",
+							"raw": "http://103.127.97.117:4001/laporan",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"laporan"
 							]
@@ -682,12 +747,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/laporan/:id",
+							"raw": "http://103.127.97.117:4001/laporan/:id",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
-							"port": "3000",
+							"port": "4001",
 							"path": [
 								"laporan",
 								":id"

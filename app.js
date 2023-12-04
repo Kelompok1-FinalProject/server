@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 // const errorHandling = require("./middlewares/errorHandling");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4001;
 
 app.use(bodyParser.text());
 app.use(bodyParser.json({ limit: "50mb" }));
@@ -26,5 +26,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server listening on http://localhost:${port}...`);
+  console.log(`Server listening on http://103.127.97.117:${port}...`);
 });
