@@ -11,15 +11,43 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Menu.hasMany(models.Transaksi, { foreignKey: 'menuId' });
     }
   }
   Menu.init({
-    name: DataTypes.STRING,
-    description: DataTypes.TEXT,
-    gambar: DataTypes.TEXT,
-    harga: DataTypes.INTEGER,
-    kategori: DataTypes.ENUM,
-    status: DataTypes.ENUM
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [3, 30],
+      },
+    },
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+      validate: {
+        min: 10,
+      },
+    },
+    gambar: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    harga: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    kategori: {
+      type: DataTypes.ENUM,
+      allowNull: false,
+      values: ["makanan", "minuman"],
+    },
+    status: {
+      type: Sequelize.ENUM,
+      allowNull: false,
+      values: ["private", "public"],
+      defaultValue: "public",
+    },
   }, {
     sequelize,
     modelName: 'Menu',
