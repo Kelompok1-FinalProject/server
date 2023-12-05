@@ -10,19 +10,33 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        allowNull: false,
+        type: Sequelize.STRING,
+        validate: {
+          len: [3, 20],
+        },
       },
       email: {
-        type: Sequelize.STRING
+        allowNull: false,
+        type: Sequelize.STRING,
+        isEmail: true,
       },
       password: {
-        type: Sequelize.TEXT
+        allowNull: false,
+        type: Sequelize.TEXT,
+        validate: {
+          len: [8, 20],
+        },
       },
       role: {
-        type: Sequelize.ENUM
+        allowNull: false,
+        type: Sequelize.ENUM,
+        values: ["Owner", "Kasir", "Pelayan"],
       },
       isAdmin: {
-        type: Sequelize.BOOLEAN
+        allowNull: false,
+        type: Sequelize.BOOLEAN,
+        defaulValue: false,
       },
       createdAt: {
         allowNull: false,
