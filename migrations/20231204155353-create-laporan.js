@@ -10,22 +10,50 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       customerId: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Customers",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       transaksiId: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Transaksis",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       nameMenu: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       pemasukan: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
       },
       modal: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
       },
       laba: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
+        validate: {
+          isNonNegative(value) {
+            if (value < 0) {
+              throw new Error("Nilai laba harus non-negatif.");
+            }
+          },
+        },
       },
       createdAt: {
         allowNull: false,

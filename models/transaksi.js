@@ -11,14 +11,47 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Transaksi.hasMany(models.Laporan, { foreignKey: 'transaksiId' });
+      Transaksi.belongsTo(models.Customer, { foreignKey: 'customerId' });
+      Transaksi.belongsTo(models.Menu, { foreignKey: 'menuId' });
     }
   }
   Transaksi.init({
-    customerId: DataTypes.INTEGER,
-    menuId: DataTypes.INTEGER,
-    nameMenu: DataTypes.STRING,
-    jumlahOrder: DataTypes.INTEGER,
-    totalPembayaran: DataTypes.INTEGER
+    customerId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "Customers",
+        key: "id",
+      },
+      onUpdate: "CASCADE",
+      onDelete: "CASCADE",
+    },
+    menuId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "Menus",
+        key: "id",
+      },
+      onUpdate: "CASCADE",
+      onDelete: "CASCADE",
+    },
+    nameMenu: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    jumlahOrder: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        min: 1, // Jumlah order tidak boleh kurang dari 1
+      },
+    },
+    totalPembayaran: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   }, {
     sequelize,
     modelName: 'Transaksi',

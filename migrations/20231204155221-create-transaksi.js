@@ -10,18 +10,38 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       customerId: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Customers",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       menuId: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: "Menus",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       nameMenu: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       jumlahOrder: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        validate: {
+          min: 1, // Jumlah order tidak boleh kurang dari 1
+        },
       },
       totalPembayaran: {
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       createdAt: {

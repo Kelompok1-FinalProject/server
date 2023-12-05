@@ -10,22 +10,37 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        allowNull: false,
+        type: Sequelize.STRING,
+        validate: {
+          len: [3, 30],
+        },
       },
       description: {
-        type: Sequelize.TEXT
+        allowNull: false,
+        type: Sequelize.TEXT,
+        validate: {
+          min: 10,
+        },
       },
       gambar: {
+        allowNull: false,
         type: Sequelize.TEXT
       },
       harga: {
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       kategori: {
-        type: Sequelize.ENUM
+        allowNull: false,
+        type: Sequelize.ENUM,
+        values: ["makanan", "minuman"],
       },
       status: {
-        type: Sequelize.ENUM
+        allowNull: false,
+        type: Sequelize.ENUM,
+        values: ["private", "public"],
+        defaultValue: "public",
       },
       createdAt: {
         allowNull: false,
