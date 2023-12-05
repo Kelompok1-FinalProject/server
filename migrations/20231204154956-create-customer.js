@@ -10,25 +10,46 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING
+        allowNull: false,
+        type: Sequelize.STRING,
+        validate: {
+          len: [3, 20],
+        },
       },
       noMeja: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        validate: {
+          min: 1, // Nomor meja harus lebih besar dari 0
+          // tambahkan validasi lain jika diperlukan
+        },
       },
       payment: {
-        type: Sequelize.ENUM
+        allowNull: false,
+        type: Sequelize.ENUM,
+        values: ["Dana", "Qris", "Gopay"],
       },
       totalPembayaran: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
       },
       totalLaba: {
-        type: Sequelize.INTEGER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        defaultValue: 0,
       },
       statusBayar: {
-        type: Sequelize.ENUM
+        allowNull: false,
+        type: Sequelize.ENUM,
+        values: ["Belum Bayar", "Done"],
+        defaultValue: "Belum Bayar",
       },
       statusPesanan: {
-        type: Sequelize.ENUM
+        allowNull: false,
+        type: Sequelize.ENUM,
+        values: ["Created", "In Progress", "Done"],
+        defaultValue: "Created",
       },
       createdAt: {
         allowNull: false,
