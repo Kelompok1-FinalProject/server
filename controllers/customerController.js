@@ -1,9 +1,9 @@
-const { Customer, Transaction } = require("../models");
+const { Customer, Transaksi } = require("../models");
 const jwt = require("jsonwebtoken");
 const secret = "cafe-serumpunrasa";
 
 class Controller {
-  static async addCustomer(req, res, next) {
+  static async postCustomer(req, res, next) {
     try {
       const { name, noMeja, payment } = req.body;
       const customer = await Customer.create({
@@ -20,7 +20,8 @@ class Controller {
         },
         secret
       );
-      res.status(201).json(token);
+      res.status(201).json({ message: "Berhasil menambahkan customer.", data:token});
+      
     } catch (error) {
       next(error);
     }
@@ -28,7 +29,7 @@ class Controller {
   static async getCustomer(req, res, next) {
     try {
       const customer = await Customer.findAll({
-        include: Transaction,
+        include: Transaksi,
         attributes: {
           exclude: ["createdAt", "updatedAt"],
         },
@@ -45,7 +46,7 @@ class Controller {
       if (findId) {
         const customer = await Customer.findOne({
           where: { id },
-          include: Transaction,
+          include: Transaksi,
           attributes: {
             exclude: ["createdAt", "updatedAt"],
           },
@@ -68,7 +69,7 @@ class Controller {
         await Customer.update(
           {
             statusBayar,
-            statusPesan: "In Progress",
+            statusPesanan: "In Progress",
           },
           {
             where: {
@@ -86,14 +87,14 @@ class Controller {
   }
   static async updateStatusPesan(req, res, next) {
     try {
-      const { statusPesan } = req.body;
+      const { statusPesanan } = req.body;
       let id = Number(req.params["id"]);
       const findId = await Customer.findByPk(id);
       console.log(findId);
       if (findId) {
         await Customer.update(
           {
-            statusPesan,
+            statusPesanan,
           },
           {
             where: {

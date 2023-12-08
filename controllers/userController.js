@@ -7,7 +7,7 @@ const secret = "cafe-serumpunrasa";
 class Controller {
   static async registerUser(req, res, next) {
     const body = req.body;
-    const { nama, role, email, password } = body;
+    const { name, role, email, password } = body;
 
     try {
     if (!validator.isEmail(email)) {
@@ -19,12 +19,12 @@ class Controller {
     }
 
     const newUser = await User.create({
-      nama,
+      name,
       role,
       email,
       password,
     });
-    res.status(201).json({ message: "Akun berhasil dibuat, silahkan login.", newUser});
+    res.status(201).json({ message: "Akun berhasil dibuat, silahkan login.", data:newUser});
     } catch(error) {
     return res.status(500).json(error);
       }
@@ -48,16 +48,18 @@ class Controller {
           const token = jwt.sign(
             {
               id: loginUser.id,
+              role: loginUser.role,
               email: loginUser.email,
+              isAdmin: loginUser.isAdmin,
             },
             secret
           );
-          res.status(200).json(token);
+          res.status(200).json({ message: "Anda berhasil login.", data:token});
         } else {
-          next(new Error("Email atau Password Salah"));
+          throw new Error("Email atau Password Salah");
         }
       } else {
-        next(new Error("Email atau Password Salah"));
+        throw new Error("Email atau Password Salah");
       }
     } catch (error) {
       next(error);

@@ -93,6 +93,27 @@ module.exports = {
       createdAt: new Date(),
       updatedAt: new Date(),
     },
+    {
+      name: "Es Cendol",
+      description: "Traditional Indonesian iced dessert with pandan rice flour jelly, coconut milk, and palm sugar.",
+      gambar: "link",
+      harga: 10000,
+      kategori: "minuman",
+      status: "public",
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    {
+      name: "Ramen",
+      description: "Authentic Japanese ramen with rich broth, tender noodles, and a variety of toppings.",
+      gambar: "link",
+      harga: 15000,
+      kategori: "makanan",
+      status: "public",
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    },
+    
   ], {});
 },
 
