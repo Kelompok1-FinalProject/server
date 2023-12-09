@@ -53,6 +53,7 @@ module.exports = (sequelize, DataTypes) => {
     laba: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      defaultValue: 0,
       validate: {
         isNonNegative(value) {
           if (value < 0) {

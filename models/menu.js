@@ -43,7 +43,7 @@ module.exports = (sequelize, DataTypes) => {
       values: ["makanan", "minuman"],
     },
     status: {
-      type: Sequelize.ENUM,
+      type: DataTypes.ENUM,
       allowNull: false,
       values: ["private", "public"],
       defaultValue: "public",
