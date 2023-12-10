@@ -15,7 +15,7 @@ app.use(
     parameterLimit: 50000,
   })
 );
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(routes);

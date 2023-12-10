@@ -3,6 +3,15 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
+    /**
+     * Add seed commands here.
+     *
+     * Example:
+     * await queryInterface.bulkInsert('People', [{
+     *   name: 'John Doe',
+     *   isBetaMember: false
+     * }], {});
+     */
     await queryInterface.bulkInsert(
       "Menus",
       [
@@ -10,7 +19,7 @@ module.exports = {
           name: "Iced Tea",
           description:
             " Nikmati kesegaran Es Teh untuk melepas dahaga dan memberikan kesegaran saat meminumnya.",
-          gambar: "link esteh",
+          gambar: "link",
           harga: 5000,
           kategori: "minuman",
           status: "public",
