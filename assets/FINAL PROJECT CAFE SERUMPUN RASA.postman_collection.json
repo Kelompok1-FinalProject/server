@@ -24,13 +24,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://103.127.97.117:4001/register",
+							"raw": "http://47.128.145.189:4001/register",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -55,13 +55,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://103.127.97.117:4001/login",
+							"raw": "http://47.128.145.189:4001/login",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -77,13 +77,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001",
+							"raw": "http://47.128.145.189:4001",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001"
 						}
@@ -120,13 +120,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://103.127.97.117:4001/menu",
+							"raw": "http://47.128.145.189:4001/menu",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -142,13 +142,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/menu",
+							"raw": "http://47.128.145.189:4001/menu",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -164,13 +164,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/menu/:kategori",
+							"raw": "http://47.128.145.189:4001/menu/:kategori",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -212,13 +212,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://103.127.97.117:4001/menu/:id",
+							"raw": "http://47.128.145.189:4001/menu/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -250,13 +250,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://103.127.97.117:4001/menu/:id",
+							"raw": "http://47.128.145.189:4001/menu/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -289,13 +289,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/menu/:id",
+							"raw": "http://47.128.145.189:4001/menu/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -332,13 +332,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://103.127.97.117:4001/customer",
+							"raw": "http://47.128.145.189:4001/customer",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -364,13 +364,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/customer",
+							"raw": "http://47.128.145.189:4001/customer",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -396,13 +396,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/customer/:id",
+							"raw": "http://47.128.145.189:4001/customer/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -444,13 +444,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://103.127.97.117:4001/customer/:id",
+							"raw": "http://47.128.145.189:4001/customer/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -468,7 +468,7 @@
 					"response": []
 				},
 				{
-					"name": "Update Status Pesan",
+					"name": "Update Status Pesanan",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -480,11 +480,11 @@
 								}
 							]
 						},
-						"method": "PATCH",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"statusPesan\": \"Done\"\r\n}",
+							"raw": "{\r\n    \"statusPesanan\": \"Done\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -492,13 +492,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://103.127.97.117:4001/customer/:id",
+							"raw": "http://47.128.145.189:4001/customer/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -545,13 +545,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://103.127.97.117:4001/transaction/:id",
+							"raw": "http://47.128.145.189:4001/transaction/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -563,6 +563,38 @@
 									"key": "id",
 									"value": "7"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaksi List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjExMjgzOX0.8eM1Vn2DODhyxemLLdfCXbd8f8g-oKupw2ZCUtORZS8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://47.128.145.189:4001/transaksi",
+							"protocol": "http",
+							"host": [
+								"47",
+								"128",
+								"145",
+								"189"
+							],
+							"port": "4001",
+							"path": [
+								"transaksi"
 							]
 						}
 					},
@@ -584,13 +616,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/transaction/:id",
+							"raw": "http://47.128.145.189:4001/transaction/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -632,13 +664,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://103.127.97.117:4001/transaction/:id",
+							"raw": "http://47.128.145.189:4001/transaction/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -671,13 +703,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/transaction/:id",
+							"raw": "http://47.128.145.189:4001/transaction/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -715,13 +747,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/laporan",
+							"raw": "http://47.128.145.189:4001/laporan",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
@@ -747,13 +779,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/laporan/:id",
+							"raw": "http://47.128.145.189:4001/laporan/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"47",
+								"128",
+								"145",
+								"189"
 							],
 							"port": "4001",
 							"path": [
