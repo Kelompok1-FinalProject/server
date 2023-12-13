@@ -19,8 +19,6 @@ async function authentication(req, res, next) {
     // Customer
     req.name = decoded.name;
     req.noMeja = decoded.noMeja;
-    req.totalPembayaran = decoded.totalPembayaran;
-    req.totalLaba = decoded.totalLaba;
 
     next();
   } catch (error) {

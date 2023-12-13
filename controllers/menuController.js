@@ -23,11 +23,31 @@ class Controller {
   static async getMenu(req, res, next) {
     try {
       const menu = await Menu.findAll();
-      res.status(200).json({
-        message: "Menampilkan List Menu",
-        data: menu,
-      });
-    } catch {
+      if (menu) {
+        res.status(200).json({
+          message: "Menampilkan List Menu",
+          data: menu,
+        });
+      } else {
+        throw new Error("Tidak ada Data pada List Menu");
+      }
+    } catch (error) {
+      next(error);
+    }
+  }
+  static async getMenuId(req, res, next) {
+    try {
+      const id = req.params["id"];
+      const menu = await Menu.findByPk(id);
+      if (menu) {
+        res.status(200).json({
+          message: `Menampilkan Menu dengan Id ${id}`,
+          data: menu,
+        });
+      } else {
+        throw new Error(`Tidak Menu dengan Id ${id}`);
+      }
+    } catch (error) {
       next(error);
     }
   }
@@ -52,7 +72,7 @@ class Controller {
   static async updateMenu(req, res, next) {
     try {
       const body = req.body;
-      const { name, description, harga } = body;
+      const { name, description, gambar, harga } = body;
       const id = Number(req.params["id"]);
       const findId = await Menu.findByPk(id);
       if (findId) {
@@ -60,6 +80,7 @@ class Controller {
           {
             name,
             description,
+            gambar,
             harga,
           },
           { where: { id } }

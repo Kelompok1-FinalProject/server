@@ -6,7 +6,8 @@ const routes = require("express").Router();
 
 routes.post("", authentication, isAdmin, menuController.addMenu);
 routes.get("", menuController.getMenu);
-routes.get("/:kategori", menuController.getMenuKategori);
+routes.get("/:id", menuController.getMenuId);
+routes.get("/:kategori/menu", menuController.getMenuKategori);
 routes.put("/:id", authentication, isAdmin, menuController.updateMenu);
 routes.patch(
   "/:id",

@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2c305de7-dd8d-4dc7-995f-5d358200d1a3",
+		"_postman_id": "9fcf4161-b9c0-42da-8d54-ba4f38096f4b",
 		"name": "FINAL PROJECT CAFE SERUMPUN RASA",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "30228184"
@@ -24,13 +24,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://47.128.145.189:4001/register",
+							"raw": "http://103.127.97.117:4001/register",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
@@ -47,7 +47,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"email\": \"fahriw44@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+							"raw": "{\r\n  \"email\": \"serumpunrasa6483@gmail.com\",\r\n  \"password\": \"serumpunrasa\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -55,13 +55,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://47.128.145.189:4001/login",
+							"raw": "http://103.127.97.117:4001/login",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
@@ -77,13 +77,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001",
+							"raw": "http://103.127.97.117:4001",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001"
 						}
@@ -103,7 +103,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJmYWhyaXc0NEBnbWFpbC5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2OTkzNjIyODZ9.nTPl1nxos2zkFHv4ENWWhg9vjmAc0lbR8C55jnRBq_A",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQ2MjAwOH0.6HyMPblRFS9wCUrPU7CV5ax6p2XMW7SqAdB9mlG7__w",
 									"type": "string"
 								}
 							]
@@ -120,13 +120,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://47.128.145.189:4001/menu",
+							"raw": "http://103.127.97.117:4001/menu",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
@@ -142,17 +142,46 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001/menu",
+							"raw": "http://103.127.97.117:4001/menu",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
 								"menu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menu List By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://103.127.97.117:4001/menu/:id",
+							"protocol": "http",
+							"host": [
+								"103",
+								"127",
+								"97",
+								"117"
+							],
+							"port": "4001",
+							"path": [
+								"menu",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
 							]
 						}
 					},
@@ -164,18 +193,19 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001/menu/:kategori",
+							"raw": "http://103.127.97.117:4001/menu/:kategori/menu",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
 								"menu",
-								":kategori"
+								":kategori",
+								"menu"
 							],
 							"variable": [
 								{
@@ -195,7 +225,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJmYWhyaXc0NEBnbWFpbC5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2OTkzNjIyODZ9.nTPl1nxos2zkFHv4ENWWhg9vjmAc0lbR8C55jnRBq_A",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQ2MjAwOH0.6HyMPblRFS9wCUrPU7CV5ax6p2XMW7SqAdB9mlG7__w",
 									"type": "string"
 								}
 							]
@@ -204,7 +234,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Nasi Goreng Gila\",\r\n  \"description\": \"Nasi Goreng Sosis\",\r\n  \"harga\": 15000\r\n}",
+							"raw": "{\r\n  \"name\": \"Nasi Goreng Gila\",\r\n  \"description\": \"Nasi Goreng Sosis\",\r\n  \"gambar\": \"link Nasi Goreng Gila\",\r\n  \"harga\": 15000\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -212,13 +242,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://47.128.145.189:4001/menu/:id",
+							"raw": "http://103.127.97.117:4001/menu/:id",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
@@ -228,7 +258,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "6"
+									"value": "9"
 								}
 							]
 						}
@@ -238,6 +268,16 @@
 				{
 					"name": "Menu Update Status",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQ2MjAwOH0.6HyMPblRFS9wCUrPU7CV5ax6p2XMW7SqAdB9mlG7__w",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PATCH",
 						"header": [],
 						"body": {
@@ -250,13 +290,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://47.128.145.189:4001/menu/:id",
+							"raw": "http://103.127.97.117:4001/menu/:id",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
@@ -266,7 +306,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": ""
+									"value": "9"
 								}
 							]
 						}
@@ -281,7 +321,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJmYWhyaXc0NEBnbWFpbC5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2OTkzNjIyODZ9.nTPl1nxos2zkFHv4ENWWhg9vjmAc0lbR8C55jnRBq_A",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQ2MjAwOH0.6HyMPblRFS9wCUrPU7CV5ax6p2XMW7SqAdB9mlG7__w",
 									"type": "string"
 								}
 							]
@@ -289,13 +329,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001/menu/:id",
+							"raw": "http://103.127.97.117:4001/menu/:id",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
@@ -305,7 +345,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "6"
+									"value": "9"
 								}
 							]
 						}
@@ -324,7 +364,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Fahri Wijaya\",\r\n  \"noMeja\": 17,\r\n  \"payment\": \"Qris\"\r\n}",
+							"raw": "{\r\n  \"name\": \"Fahri Wijaya\",\r\n  \"noMeja\": 17\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -332,13 +372,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://47.128.145.189:4001/customer",
+							"raw": "http://103.127.97.117:4001/customer",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
@@ -356,7 +396,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJmYWhyaXc0NEBnbWFpbC5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2OTkzNjIyODZ9.nTPl1nxos2zkFHv4ENWWhg9vjmAc0lbR8C55jnRBq_A",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQ2MjAwOH0.6HyMPblRFS9wCUrPU7CV5ax6p2XMW7SqAdB9mlG7__w",
 									"type": "string"
 								}
 							]
@@ -364,17 +404,40 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001/customer",
+							"raw": "http://103.127.97.117:4001/customer",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
 								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Waiting List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://103.127.97.117:4001/customer/waitinglist",
+							"protocol": "http",
+							"host": [
+								"103",
+								"127",
+								"97",
+								"117"
+							],
+							"port": "4001",
+							"path": [
+								"customer",
+								"waitinglist"
 							]
 						}
 					},
@@ -388,7 +451,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6IlphcmEgS2hhaXJ1bm5pc2EiLCJub01lamEiOjE4LCJ0b3RhbFByaWNlIjowLCJpYXQiOjE2OTkzODUyMDl9.xTz2AlfKfb_83x8B7-afYUwcdBzYNOpCejbH9_q-C1E",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkZhaHJpIFdpamF5YSIsIm5vTWVqYSI6MTcsImlhdCI6MTcwMjQ2NjA5OX0.l79uKj9PMVCZTq0C-jG_CtWB_e0DzCvO5OX4QIzq3SE",
 									"type": "string"
 								}
 							]
@@ -396,24 +459,60 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001/customer/:id",
+							"raw": "http://103.127.97.117:4001/customer/buyer",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
 								"customer",
-								":id"
-							],
-							"variable": [
+								"buyer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
 								{
-									"key": "id",
-									"value": "6"
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkZhaHJpIFdpamF5YSIsIm5vTWVqYSI6MTcsImlhdCI6MTcwMjQ2NjA5OX0.l79uKj9PMVCZTq0C-jG_CtWB_e0DzCvO5OX4QIzq3SE",
+									"type": "string"
 								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"payment\": \"Qris\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://103.127.97.117:4001/customer/payment",
+							"protocol": "http",
+							"host": [
+								"103",
+								"127",
+								"97",
+								"117"
+							],
+							"port": "4001",
+							"path": [
+								"customer",
+								"payment"
 							]
 						}
 					},
@@ -427,7 +526,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJmYWhyaXc0NEBnbWFpbC5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2OTkzNjIyODZ9.nTPl1nxos2zkFHv4ENWWhg9vjmAc0lbR8C55jnRBq_A",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQ5NzkxOX0.CFnYdCFNzbOaVuITT6KDjFt2oGXC85f-ZoKtX2SzFHE",
 									"type": "string"
 								}
 							]
@@ -444,23 +543,24 @@
 							}
 						},
 						"url": {
-							"raw": "http://47.128.145.189:4001/customer/:id",
+							"raw": "http://103.127.97.117:4001/customer/:id/bayar",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
 								"customer",
-								":id"
+								":id",
+								"bayar"
 							],
 							"variable": [
 								{
 									"key": "id",
-									"value": "4"
+									"value": "2"
 								}
 							]
 						}
@@ -475,12 +575,12 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJmYWhyaXc0NEBnbWFpbC5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2OTkzNjIyODZ9.nTPl1nxos2zkFHv4ENWWhg9vjmAc0lbR8C55jnRBq_A",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQ2MjAwOH0.6HyMPblRFS9wCUrPU7CV5ax6p2XMW7SqAdB9mlG7__w",
 									"type": "string"
 								}
 							]
 						},
-						"method": "PUT",
+						"method": "PATCH",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -492,23 +592,24 @@
 							}
 						},
 						"url": {
-							"raw": "http://47.128.145.189:4001/customer/:id",
+							"raw": "http://103.127.97.117:4001/customer/:id/pesanan",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
 								"customer",
-								":id"
+								":id",
+								"pesanan"
 							],
 							"variable": [
 								{
 									"key": "id",
-									"value": "4"
+									"value": "1"
 								}
 							]
 						}
@@ -528,7 +629,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywibmFtZSI6IlphcmEgS2hhaXJ1bm5pc2EiLCJub01lamEiOjE4LCJ0b3RhbFByaWNlIjowLCJpYXQiOjE3MDAyNDYyMTJ9.tBq6c2U1fvtIc5YqpUZ8dTeEe7JMtx1vAUEDUn8Dwqo",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkZhaHJpIFdpamF5YSIsIm5vTWVqYSI6MTcsImlhdCI6MTcwMjQ2NjA5OX0.l79uKj9PMVCZTq0C-jG_CtWB_e0DzCvO5OX4QIzq3SE",
 									"type": "string"
 								}
 							]
@@ -537,7 +638,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"menuId\": 1,\r\n    \"jumlahOrder\": 1\r\n}",
+							"raw": "{\r\n    \"menuId\": 2,\r\n    \"jumlahOrder\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -545,24 +646,17 @@
 							}
 						},
 						"url": {
-							"raw": "http://47.128.145.189:4001/transaction/:id",
+							"raw": "http://103.127.97.117:4001/transaksi",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
-								"transaction",
-								":id"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "7"
-								}
+								"transaksi"
 							]
 						}
 					},
@@ -576,7 +670,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjExMjgzOX0.8eM1Vn2DODhyxemLLdfCXbd8f8g-oKupw2ZCUtORZS8",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQ2MjAwOH0.6HyMPblRFS9wCUrPU7CV5ax6p2XMW7SqAdB9mlG7__w",
 									"type": "string"
 								}
 							]
@@ -584,13 +678,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001/transaksi",
+							"raw": "http://103.127.97.117:4001/transaksi",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
@@ -601,14 +695,14 @@
 					"response": []
 				},
 				{
-					"name": "Transaksi By Id",
+					"name": "Transaksi By customerId",
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6IlphcmEgS2hhaXJ1bm5pc2EiLCJub01lamEiOjE4LCJ0b3RhbFByaWNlIjowLCJpYXQiOjE2OTkzODUyMDl9.xTz2AlfKfb_83x8B7-afYUwcdBzYNOpCejbH9_q-C1E",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkZhaHJpIFdpamF5YSIsIm5vTWVqYSI6MTcsImlhdCI6MTcwMjQ2NjA5OX0.l79uKj9PMVCZTq0C-jG_CtWB_e0DzCvO5OX4QIzq3SE",
 									"type": "string"
 								}
 							]
@@ -616,24 +710,18 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001/transaction/:id",
+							"raw": "http://103.127.97.117:4001/transaksi/buyer",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
-								"transaction",
-								":id"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "6"
-								}
+								"transaksi",
+								"buyer"
 							]
 						}
 					},
@@ -647,7 +735,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6IlphcmEgS2hhaXJ1bm5pc2EiLCJub01lamEiOjE4LCJ0b3RhbFByaWNlIjowLCJpYXQiOjE2OTkzODUyMDl9.xTz2AlfKfb_83x8B7-afYUwcdBzYNOpCejbH9_q-C1E",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkZhaHJpIFdpamF5YSIsIm5vTWVqYSI6MTcsImlhdCI6MTcwMjQ2NjA5OX0.l79uKj9PMVCZTq0C-jG_CtWB_e0DzCvO5OX4QIzq3SE",
 									"type": "string"
 								}
 							]
@@ -664,23 +752,23 @@
 							}
 						},
 						"url": {
-							"raw": "http://47.128.145.189:4001/transaction/:id",
+							"raw": "http://103.127.97.117:4001/transaksi/:id",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
-								"transaction",
+								"transaksi",
 								":id"
 							],
 							"variable": [
 								{
 									"key": "id",
-									"value": "5"
+									"value": "2"
 								}
 							]
 						}
@@ -695,7 +783,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywibmFtZSI6IlphcmEgS2hhaXJ1bm5pc2EiLCJub01lamEiOjE4LCJ0b3RhbFByaWNlIjowLCJpYXQiOjE3MDAyNDYyMTJ9.tBq6c2U1fvtIc5YqpUZ8dTeEe7JMtx1vAUEDUn8Dwqo",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkZhaHJpIFdpamF5YSIsIm5vTWVqYSI6MTcsImlhdCI6MTcwMjQ2NjA5OX0.l79uKj9PMVCZTq0C-jG_CtWB_e0DzCvO5OX4QIzq3SE",
 									"type": "string"
 								}
 							]
@@ -703,23 +791,23 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001/transaction/:id",
+							"raw": "http://103.127.97.117:4001/transaksi/:id",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
-								"transaction",
+								"transaksi",
 								":id"
 							],
 							"variable": [
 								{
 									"key": "id",
-									"value": "8"
+									"value": "2"
 								}
 							]
 						}
@@ -732,14 +820,14 @@
 			"name": "Laporan",
 			"item": [
 				{
-					"name": "Get Laporan",
+					"name": "Get Laporan Customer",
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJmYWhyaXc0NEBnbWFpbC5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MDEyNDIwODl9.RYSLhuTW0PTwoAR84-VnjjxNKEdUmmRIXsJ8juyqE7U",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQ2MjAwOH0.6HyMPblRFS9wCUrPU7CV5ax6p2XMW7SqAdB9mlG7__w",
 									"type": "string"
 								}
 							]
@@ -747,13 +835,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001/laporan",
+							"raw": "http://103.127.97.117:4001/laporan",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [
@@ -764,14 +852,14 @@
 					"response": []
 				},
 				{
-					"name": "Get Laporan By Id",
+					"name": "Get Laporan By customerId",
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJmYWhyaXc0NEBnbWFpbC5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MDEyNDIwODl9.RYSLhuTW0PTwoAR84-VnjjxNKEdUmmRIXsJ8juyqE7U",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6Ik93bmVyIiwiZW1haWwiOiJzZXJ1bXB1bnJhc2E2NDgzQGdtYWlsLmNvbSIsImlhdCI6MTcwMjQ2MjAwOH0.6HyMPblRFS9wCUrPU7CV5ax6p2XMW7SqAdB9mlG7__w",
 									"type": "string"
 								}
 							]
@@ -779,13 +867,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://47.128.145.189:4001/laporan/:id",
+							"raw": "http://103.127.97.117:4001/laporan/:id",
 							"protocol": "http",
 							"host": [
-								"47",
-								"128",
-								"145",
-								"189"
+								"103",
+								"127",
+								"97",
+								"117"
 							],
 							"port": "4001",
 							"path": [

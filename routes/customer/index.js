@@ -7,19 +7,26 @@ const routes = require("express").Router();
 routes.post("", customerController.addCustomer);
 routes.get("", authentication, isKaryawan, customerController.getCustomer);
 routes.get(
-  "/:id",
+  "/buyer",
   authentication,
   authorization,
   customerController.getCustomerId
 );
+routes.get("/waitinglist", customerController.getCustomerWaitingList);
 routes.patch(
-  "/:id",
+  "/payment",
+  authentication,
+  authorization,
+  customerController.updatePayment
+);
+routes.patch(
+  "/:id/bayar",
   authentication,
   isKaryawan,
   customerController.updateStatusBayar
 );
-routes.put(
-  "/:id",
+routes.patch(
+  "/:id/pesanan",
   authentication,
   isKaryawan,
   customerController.updateStatusPesanan

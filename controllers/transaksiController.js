@@ -6,7 +6,7 @@ class Controller {
   static async addTransaksi(req, res, next) {
     const body = req.body;
     const { menuId, jumlahOrder } = body;
-    const customerId = Number(req.params["id"]);
+    const customerId = req.id;
     const customer = await Customer.findByPk(customerId);
     const menu = await Menu.findByPk(menuId);
 
@@ -56,17 +56,7 @@ class Controller {
   }
   static async getTransaksi(req, res, next) {
     try {
-      const transaksi = await Transaksi.findAll({
-        attributes: {
-          exclude: [
-            "customerId",
-            "menuId",
-            "createdAt",
-            "updatedAt",
-            "CustomerId",
-          ],
-        },
-      });
+      const transaksi = await Transaksi.findAll();
       res.status(200).json({
         message: "Menampilkan semua transaksi",
         data: transaksi,
@@ -77,19 +67,8 @@ class Controller {
   }
   static async getTransaksiId(req, res, next) {
     try {
-      const customerId = Number(req.params["id"]);
-      const transaksi = await Transaksi.findAll({
-        where: { customerId },
-        attributes: {
-          exclude: [
-            "customerId",
-            "menuId",
-            "createdAt",
-            "updatedAt",
-            "CustomerId",
-          ],
-        },
-      });
+      const customerId = req.id;
+      const transaksi = await Transaksi.findAll({ where: { customerId } });
       res.status(200).json({
         message: `Menampilkan transaksi customer dengan customerId  ${customerId}`,
         data: transaksi,

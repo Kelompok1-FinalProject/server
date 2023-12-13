@@ -6,14 +6,14 @@ const isOrder = require("../../middlewares/isOrder");
 const routes = require("express").Router();
 
 routes.post(
-  "/:id",
+  "",
   authentication,
   authorization,
   transaksiController.addTransaksi
 );
 routes.get("", authentication, isKaryawan, transaksiController.getTransaksi);
 routes.get(
-  "/:id",
+  "/buyer",
   authentication,
   authorization,
   transaksiController.getTransaksiId

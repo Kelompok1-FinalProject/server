@@ -25,6 +25,7 @@ module.exports = (sequelize, DataTypes) => {
       noMeja: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        defaultValue: 99,
         validate: {
           min: 1,
         },
@@ -32,7 +33,8 @@ module.exports = (sequelize, DataTypes) => {
       payment: {
         type: DataTypes.ENUM,
         allowNull: false,
-        values: ["Dana", "Qris", "Gopay"],
+        values: ["Cash", "Qris", "Transfer"],
+        defaultValue: "Cash",
       },
       totalPembayaran: {
         type: DataTypes.INTEGER,
