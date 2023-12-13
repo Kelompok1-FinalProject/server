@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Customers', {
+    await queryInterface.createTable("Customers", {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       name: {
         allowNull: false,
@@ -21,13 +21,13 @@ module.exports = {
         type: Sequelize.INTEGER,
         validate: {
           min: 1, // Nomor meja harus lebih besar dari 0
-          // tambahkan validasi lain jika diperlukan
         },
+        defaultValue: 99,
       },
       payment: {
         allowNull: false,
         type: Sequelize.ENUM,
-        values: ["Dana", "Qris", "Gopay"],
+        values: ["Cash", "Qris", "Transfer"],
       },
       totalPembayaran: {
         allowNull: false,
@@ -53,15 +53,15 @@ module.exports = {
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: Sequelize.DATE,
+      },
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Customers');
-  }
+    await queryInterface.dropTable("Customers");
+  },
 };

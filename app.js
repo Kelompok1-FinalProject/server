@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-// const routes = require("./routes/index");
-// const errorHandling = require("./middlewares/errorHandling");
+const routes = require("./routes/index");
+const errorHandling = require("./middlewares/errorHandling");
 
 const app = express();
 const port = process.env.PORT || 4001;
@@ -15,16 +15,16 @@ app.use(
     parameterLimit: 50000,
   })
 );
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// app.use(routes);
-// app.use(errorHandling);
+app.use(routes);
+app.use(errorHandling);
 
 app.get("/", (req, res) => {
-  res.status(200).send("Server is ready!");
+  res.status(200).json({ message: "ok", data: "Server is ready!" });
 });
 
 app.listen(port, () => {
-  console.log(`Server listening on http://103.127.97.117:${port}...`);
+  console.log(`Server listening on http://47.128.145.189:${port}...`);
 });
