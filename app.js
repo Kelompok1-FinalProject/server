@@ -4,8 +4,10 @@ const routes = require("./routes/index");
 const errorHandling = require("./middlewares/errorHandling");
 
 const app = express();
+const cors = require("cors");
 const port = process.env.PORT || 4001;
 
+app.use(cors());
 app.use(bodyParser.text());
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(

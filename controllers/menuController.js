@@ -54,12 +54,31 @@ class Controller {
   static async getMenuKategori(req, res, next) {
     try {
       const kategori = req.params["kategori"];
+      let status = req.query["status"];
+
+      if (status) {
+        if (status !== "public" && status !== "private"){
+          status = undefined;
+        }
+      } else {
+        status = undefined;
+      }
+
+      console.log("new status", status);
+
       if (kategori == "makanan" || kategori == "minuman") {
-        const menu = await Menu.findAll({
-          where: { kategori, status: "public" },
+        let menu;
+        if (status) {
+          menu = await Menu.findAll({
+            where: { kategori, status },
         });
+      } else {
+        menu = await Menu.findAll({
+          where: { kategori },
+      });
+      }
         res.status(200).json({
-          message: `Menampilkan List Menu Berdasarkan Katerogi ${kategori}`,
+          message: `Menampilkan List Menu Berdasarkan Kategori ${kategori}`,
           data: menu,
         });
       } else {

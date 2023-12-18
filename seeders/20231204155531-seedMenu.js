@@ -17,10 +17,8 @@ module.exports = {
       [
         {
           name: "Iced Tea",
-          description:
-            "Nikmati kesegaran Es Teh untuk melepas dahaga dan memberikan kesegaran saat meminumnya.",
-          gambar:
-            "https://drive.google.com/file/d/1tWUH0eFgWbyS5ZRxQZDRMJWPSNikezhE/view?usp=sharing",
+          description: "Nikmati kesegaran Es Teh untuk melepas dahaga dan memberikan kesegaran saat meminumnya.",
+          gambar: "https://i.imgur.com/ZUHAHy2.jpg",
           harga: 5000,
           kategori: "minuman",
           status: "public",
@@ -29,10 +27,8 @@ module.exports = {
         },
         {
           name: "French Fries",
-          description:
-            "Kentang potong tipis yang digoreng dengan sempurna hingga keemasan, disajikan dengan sentuhan garam yang pas.",
-          gambar:
-            "https://drive.google.com/file/d/1gQSTS5NLh4OIJ5DcbPWGCn1OFk1uLH2k/view?usp=sharing",
+          description: "Kentang potong tipis yang digoreng dengan sempurna hingga keemasan, disajikan dengan sentuhan garam yang pas.",
+          gambar: "https://i.imgur.com/0k34B7P.jpg",
           harga: 10000,
           kategori: "makanan",
           status: "public",
@@ -41,10 +37,8 @@ module.exports = {
         },
         {
           name: "Pempek Palembang",
-          description:
-            "Pempek tradisional Palembang yang diolah dengan rasa modern. Digoreng hingga renyah, dan disajikan dengan saus cuko khas.",
-          gambar:
-            "https://drive.google.com/file/d/1uEaoNaqrH_AW18GnzxSZJwuaG76358Do/view?usp=sharing",
+          description: "Pempek tradisional Palembang yang diolah dengan rasa modern. Digoreng hingga renyah, dan disajikan dengan saus cuko khas.",
+          gambar: "https://i.imgur.com/bDcE0TV.jpg",
           harga: 15000,
           kategori: "makanan",
           status: "public",
@@ -53,10 +47,8 @@ module.exports = {
         },
         {
           name: "Nasi Goreng Spesial",
-          description:
-            "Paduan sempurna antara nasi yang gurih, potongan daging ayam lembut, telur mata sapi, dan sayuran segar yang digoreng dengan bumbu spesial.",
-          gambar:
-            "https://drive.google.com/file/d/1M6894epFfn7b8l3hM8AYpCwZm_a4qxXz/view?usp=sharing",
+          description: "Paduan sempurna antara nasi yang gurih, potongan daging ayam lembut, telur mata sapi, dan sayuran segar yang digoreng dengan bumbu spesial.",
+          gambar: "https://i.imgur.com/wBFM8Aa.jpg",
           harga: 20000,
           kategori: "makanan",
           status: "public",
@@ -65,10 +57,8 @@ module.exports = {
         },
         {
           name: "Coffe Milk",
-          description:
-            "Kopi berkualitas tinggi yang dipadukan dengan susu lembut, menciptakan harmoni cita rasa yang luar biasa.",
-          gambar:
-            "https://drive.google.com/file/d/1SeY-2VR6G5zVEoh4RIxw_9zyoanvWPNG/view?usp=sharing",
+          description: "Kopi berkualitas tinggi yang dipadukan dengan susu lembut, menciptakan harmoni cita rasa yang luar biasa.",
+          gambar: "https://i.imgur.com/Z3zJO7q.jpg",
           harga: 10000,
           kategori: "minuman",
           status: "public",
@@ -78,8 +68,7 @@ module.exports = {
         {
           name: "Nugget",
           description: "Crunchy chicken nuggets.",
-          gambar:
-            "https://drive.google.com/file/d/1gMwOJnRDtpBWX5yriChRyrsrlKsHg7NQ/view?usp=sharing",
+          gambar: "https://i.imgur.com/c4FYfTm.jpg",
           harga: 8000,
           kategori: "makanan",
           status: "public",
@@ -89,8 +78,7 @@ module.exports = {
         {
           name: "Burger",
           description: "Tasty burger with various toppings.",
-          gambar:
-            "https://drive.google.com/file/d/1U5hg3-cZlhDmVbKmMyYEIbAK_WifsxX3/view?usp=sharing",
+          gambar: "https://i.imgur.com/bcFrk02.jpg",
           harga: 12000,
           kategori: "makanan",
           status: "public",
@@ -100,10 +88,29 @@ module.exports = {
         {
           name: "Lemon Tea",
           description: "Cold lemon-flavored tea.",
-          gambar:
-            "https://drive.google.com/file/d/1iMfAVfCcnxqUnVGsBdzLCuihmXKHG2h_/view?usp=sharing",
+          gambar: "https://i.imgur.com/AEFYTEj.jpg",
           harga: 8000,
           kategori: "minuman",
+          status: "public",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "Es Cendol",
+          description: "Traditional Indonesian iced dessert with pandan rice flour jelly, coconut milk, and palm sugar.",
+          gambar: "https://i.imgur.com/vdB8aEV.png",
+          harga: 10000,
+          kategori: "minuman",
+          status: "public",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "Ramen",
+          description: "Authentic Japanese ramen with rich broth, tender noodles, and a variety of toppings.",
+          gambar: "https://i.imgur.com/0q2qWcJ.jpg",
+          harga: 15000,
+          kategori: "makanan",
           status: "public",
           createdAt: new Date(),
           updatedAt: new Date(),
