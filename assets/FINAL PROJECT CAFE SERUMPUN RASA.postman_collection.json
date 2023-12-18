@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "9fcf4161-b9c0-42da-8d54-ba4f38096f4b",
+		"_postman_id": "979debf0-1cc9-4d8b-b206-b64358035f19",
 		"name": "FINAL PROJECT CAFE SERUMPUN RASA",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "30228184"
+		"_exporter_id": "30423050"
 	},
 	"item": [
 		{
@@ -142,17 +142,21 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/menu",
+							"raw": "http://localhost:3000/menu",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"localhost"
 							],
-							"port": "4001",
+							"port": "3000",
 							"path": [
 								"menu"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -164,15 +168,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/menu/:id",
+							"raw": "http://localhost:3000./menu/:id",
 							"protocol": "http",
 							"host": [
-								"103",
-								"127",
-								"97",
-								"117"
+								"localhost"
 							],
-							"port": "4001",
+							"port": "3000.",
 							"path": [
 								"menu",
 								":id"
@@ -180,7 +181,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "9"
+									"value": "11"
 								}
 							]
 						}
@@ -193,7 +194,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://103.127.97.117:4001/menu/:kategori/menu",
+							"raw": "http://103.127.97.117:4001/menu/:kategori/menu?status=",
 							"protocol": "http",
 							"host": [
 								"103",
@@ -206,6 +207,13 @@
 								"menu",
 								":kategori",
 								"menu"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "",
+									"description": "public || private || kosong"
+								}
 							],
 							"variable": [
 								{
