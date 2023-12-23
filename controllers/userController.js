@@ -56,7 +56,7 @@ class Controller {
             },
             secret
           );
-          res.status(201).json({
+          res.status(200).json({
             message: "Anda Berhasil Login.",
             data: token,
           });

@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
+    "username": "vocasia",
+    "password": "vocasia",
     "database": "serumpun-rasa",
-    "host": "47.128.145.189",
+    "host": "103.127.97.117",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "root",
+    "username": "vocasia",
+    "password": "vocasia",
     "database": "serumpun-rasa",
-    "host": "47.128.145.189",
+    "host": "103.127.97.117",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "root",
+    "username": "vocasia",
+    "password": "vocasia",
     "database": "serumpun-rasa",
-    "host": "47.128.145.189",
+    "host": "103.127.97.117",
     "dialect": "mysql"
   }
 }
