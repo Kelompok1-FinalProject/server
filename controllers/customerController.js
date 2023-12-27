@@ -28,9 +28,26 @@ class Controller {
   }
   static async getCustomer(req, res, next) {
     try {
-      const customer = await Customer.findAll({
-        include: Transaksi,
-      });
+      let statusPesanan = req.query["statusPesanan"];
+      if (statusPesanan) {
+        if (
+          statusPesanan !== "Created" &&
+          statusPesanan !== "In Progress" &&
+          statusPesanan !== "Done"
+        ) {
+          statusPesanan = undefined;
+        }
+      } else {
+        statusPesanan = undefined;
+      }
+
+      let customer;
+      if (statusPesanan) {
+        customer = await Customer.findAll({
+          include: Transaksi,
+          where: { statusPesanan },
+        });
+      }
       res.status(200).json({
         message: "Menampilkan semua data Customer.",
         data: customer,
